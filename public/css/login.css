@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* bacground image */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("/img/loginimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+/* posisi form keseluruhan */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+/* form */
+
+.box {
+    position: absolute;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.151);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 2);
+}
+
+
+/* header form */
+
+.header {
+    background-image: url("/img/loginimg.jpg");
+    background-size: cover;
+    padding: 60px 60px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px 15px 0 0;
+    font-size: small;
+}
+
+
+/* area login form */
+
+.login-area {
+    text-align: center;
+    padding: 30px 50px 30px 50px;
+}
+
+.login-area h1 {
+    color: white;
+}
+
+.username,
+.password {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: rgb(5, 5, 5);
+    background-color: rgba(255, 255, 255, 0.185);
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+.username::placeholder,
+.password::placeholder {
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.username:focus,
+.password:focus {
+    background-color: rgba(255, 255, 255, 0.021);
+}
+
+.field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.082);
+}
+
+.field span {
+    color: rgb(29, 27, 27);
+    width: 40px;
+    line-height: 45px;
+}
+
+.field input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 238, 238, 0.493);
+    font-size: 16px;
+}
+
+.submit {
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(112, 110, 110, 0.719);
+}
+
+a {
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.356);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+.show {
+    position: absolute;
+    right: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    cursor: pointer;
+    display: none;
+}
+
+.password:valid~.show {
+    display: block;
+}
+
+@media (max-height:540px) {
+    .overlay {
+        position: fixed;
+        max-height: 100%;
+    }
+}
