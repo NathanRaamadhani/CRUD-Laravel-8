@@ -16,12 +16,13 @@
 <body>
     <div class="overlay"></div>
     <form action="/login" method="post" class="box">
-    @csrf
+        @csrf
         <div class="header">
             <h4>
                 JURASSIC WORLD
             </h4>
-            <p>Jurassic World: Fallen Kingdom tells the story of the aftermath of the tragedy that occurred on Isla Nublar, when the fate of the herd of Dinosaurs that inhabited the island was in danger.</p>
+            <p>Jurassic World: Fallen Kingdom tells the story of the aftermath of the tragedy that occurred on Isla
+                Nublar, when the fate of the herd of Dinosaurs that inhabited the island was in danger.</p>
         </div>
         <div class="login-area">
             <h1>Sign In</h1>
@@ -53,7 +54,7 @@
                 }
             })
         </script>
-        
+
     </form>
 </body>
 
