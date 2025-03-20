@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -27,11 +28,11 @@
         <div class="login-area">
             <h1>Sign In</h1>
             <div class="field">
-                <span class="fa fa-user"></span>
+                <span class="fas fa-user"></span>
                 <input type="text" name="username" class="username" id="username" placeholder="Username">
             </div>
             <div class="field">
-                <span class="fa fa-lock"></span>
+                <span class="fas fa-lock"></span>
                 <input type="password" name="password" class="password" id="password" required placeholder="Password">
                 <span class="show">show</span>
             </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <link rel="stylesheet" href="/css/register.css">
     <title>Register</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-<div class="overlay"></div>
+    <div class="overlay"></div>
     <form action="/register" method="post" class="box">
         @csrf
 
@@ -18,19 +21,19 @@
             <br>
             <br>
             <div class="field">
-                <span class="fa fa-user"></span>
+                <span class="fas fa-user"></span>
                 <input type="text" name="username" class="username" id="username" placeholder="Username">
             </div>
             <div class="field">
-                <span class="fa fa-envelope"></span>
+                <span class="fas fa-envelope"></span>
                 <input type="email" name="email" class="email" id="email" placeholder="E-mail">
             </div>
             <div class="field">
-                <span class="fa fa-pen"></span>
+                <span class="fas fa-pen"></span>
                 <input type="text" name="nim" class="nim" id="nim" placeholder="NIM">
             </div>
             <div class="field">
-                <span class="fa fa-lock"></span>
+                <span class="fas fa-lock"></span>
                 <input type="password" name="password" class="password" id="password" required placeholder="Password">
                 <span class="show">show</span>
             </div>
@@ -52,8 +55,9 @@
                 }
             })
         </script>
-        
+
     </form>
-    
+
 </body>
+
 </html>
